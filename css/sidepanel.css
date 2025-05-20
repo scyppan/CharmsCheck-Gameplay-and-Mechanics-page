@@ -5,9 +5,9 @@
   --cc-sp-offset: 3px;
 }
 
-main {
-  /* expanded by default */
-  margin-left: var(--cc-sp-expanded);
+html body main {
+  margin-left: calc(var(--cc-sp-offset) + var(--cc-sp-expanded)) !important;
+  padding-left: 32px;
   transition: margin-left 0.3s ease;
 }
 

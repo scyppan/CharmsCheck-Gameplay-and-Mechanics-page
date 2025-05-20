@@ -41,11 +41,9 @@ function loadRepoSnippets(options) {
   loadHtmlSnippets(target, urls, wrapper);
 }
 
-// example usage:
-
 loadRepoSnippets({
   targetSelector: 'main',
   repo:    'scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  version: 'a25.5.20.001',
-  files:   ['overview', 'attributes', 'rolling', 'dueling', 'action-economy']
+  version: 'a25.5.20.004',
+  files:   ['intro', 'overview', 'attributes', 'rolling']
 });
