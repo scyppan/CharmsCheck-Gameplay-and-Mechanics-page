@@ -6,7 +6,9 @@ function loadHtmlSnippets(targetSelector, fileUrls, wrapperTagName) {
     if (index >= fileUrls.length) return;
 
     fetch(fileUrls[index])
-      .then(function(response) { return response.text(); })
+      .then(function(response) {
+        return response.text();
+      })
       .then(function(html) {
         var wrapper = document.createElement(wrapperTag);
         wrapper.innerHTML = html;

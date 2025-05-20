@@ -1,0 +1,231 @@
+Overview
+
+Charms Check is a table-top roleplaying game (TTRPG) based in the Wizarding World. It has been in the works since 2019 and the work and design is ongoing. The game is still, very much, a work in progress. 
+
+Basic Mechanics
+
+Exploring the world. Several locations will be available in the game. Hogwarts, Hogsmeade, The Dark Forest and the four main markets in London already have complete maps and will be made available to game masters (but aren't fully uploaded and shared yet). Many other locations will be made available. Characters are invited to travel in all of the ways that are seen in the books and movies. 
+
+Era. The game is, by default, designed to begin about 2-3 years after the Battle of Hogwarts and Voldemorte's demise. However, the core mechanics can work in any era and game master's are welcome to adapt this to other periods of time. Substantial work is being completed behind the scenes to make the game era-flexible. 
+
+Time. Time moves differently in this game relative to other TTRPGs. Think of it like a movie with scenes rather than a single continuous playing experience. In a game like DnD, you might enter a dungeon and spend three (real-time) play-periods just searching and clearing that dungeon. In game time, this would have only taken a few hours. Charms Check handles time more flexibly. Your characters are attending classes and tending to other responsibilities in the background. The main story occurs through "actions". Typically, the headmaster (Game/dungeon master) will have a calendar of events that describe when certain non-player character (NPC) actions take place (like a prison breakout, a visitor coming to the school, a quidditch match, etc.). After the headmaster completes their NPC actions, the players each get one action (to occur on whatever dates and times they choose, usually within about a week). The headmaster manages time and can slow down or speed up the players as necessary to maintain story cohesion. NPC actions and player actions will be described further later. 
+
+Combat. Combat is an important part of the game, but it is not as emphasized as it is in other TTRPGs. Much of the game is about relationships, story, drama, danger, adventure. Combat will be explained more fully below.
+
+Rolling. The game is based on a d10 system, but other dice are sometimes used. There are a number of bonuses and penalties associated with any roll. A number of tools are being developed to help players manage these rolls using phones or computers.
+
+Technology. The game is primarily being designed to work in Roll20. It can be played offline, but the main game design is centered around using the roll20 platform. 
+
+Dealing with Uncertainty
+
+The world is still in development. As such, many items, plants, potions, and spells don't have carefully spelled out effects. Do your best to interpret based on the information available. However, if you're unsure what a particular item, plant, potion, or spell will do, declare what you believe it will do then roll a die to see if it does that. The headmaster can support you in describing the events that unfold. 
+
+Your Character and their Life
+
+Character Creation
+
+We have a new character creator that will walk you through every aspect of character creation. Your finalized character will be stored in the online database. You must have an account with us to be able to use the character creator. 
+
+The main aspects of the character creator (which are explained further in the character creator itself) are:
+
+Name. With the option to create aliases and surnames
+
+Background. This is your blood status and an indication of how you were raised (amongst muggles or magical folk). This affects how many personality traits you receive and how many skill points you can spend at the start of the game. Traits, Characteristics and Skill points are described later. 
+
+Parental Values. These are a few values that determine certain aspects of your parentage. Wealth and Generosity specifically affect your allowance. Permissiveness impacts how many personality traits you get. The headmaster can use these values to roll certain interactions with your parents if they choose (such as signing a permission slip). 
+
+Skills, Characteristics, Traits, and Abilities. Described below.
+
+Age. There is an option to create either an older or younger character. However, most start out as a first year student. Your choice.
+
+Education. This will be described more fully later. Here is a brief overview: There are many magical schools to choose from. Most are canon, however the serious lack of geographic diversity felt substantially under-representative of the broader global population. So, several non-canon schools have since been included from all over the world. Their details are still being developed. Each school year you take certain core courses and there are often (not always) elective options as well. The course offerings differ based on the school you attend. You earn one skill point in any class you attend.
+
+Rolling
+
+Rolling primarily takes place with the use of a single 10 sided die (1d10). Many bonuses and penalties apply to any given roll, so the final tally after all bonuses and penalties are added is called the omnibus value. 
+
+Set values. Very often, a character will cast a spell with some lasting effect. This could be a defensive shield, a concealment charm, or a magical lock. When the spell is cast, the omnibus value becomes the set value that must be beaten in order to counteract that magical effect. 
+
+For example, Tilly magically locks a lock. Her final omnibus value is a 26. Anyone who wants to cast alohamora on that lock to unlock it must  roll higher than 26 to successfully break open the lock. 
+
+Example 2, Jaden magically conceals himself with an omnibus value of 14. However, Yusuf rolls a perception check and gets an omnibus value of 16. Yusuf can detect Jaden because Yusuf's 16 is greater than Jaden's 14. 
+
+Character Stats
+
+Abilities. There are four main "governing" abilities in the game. They are, Finesse, Intelligence, Spirit, and Power. Each ability has four or five skills tied to it. The default ability roll is 
+
+1d10 + Ability Value + Bonuses/Penalties
+
+Example: Ella has a power score of 3. The headmaster asks to roll a "straight" power roll. Ella rolls 1d10 and gets a 5. They have no active penalties or bonuses. So
+
+1d10 + Ability Value + Bonuses/Penalties
+(5) + (3) + (0) = Omnibus value of 8 
+
+Skills. There are 18 skills in the game sorted into four governing abilities. These skills roughly correspond with courses in the canon, but Dark Arts, Social skills and Perception are also included (and are courses at other schools). Each skill has a specific set of mechanics and intricacies that are still being outlined in other areas. However, there are four "casting" skills: Dark Arts, Defense, Transfiguration, and Charms. The default skill roll is 
+
+1d10 + Skill Value + Governing Ability Value + Bonuses/Penalties
+
+Example: Ella has a power score of 3 and a charms value of 2. The headmaster asks to roll a charms check. Ella rolls 1d10 and gets a 7. They have no active penalties or bonuses. So
+
+1d10 + Skill Value + Governing Ability Value + Bonuses/Penalties
+(7) + (2) + (3) + (0) = Omnibus value of 12
+
+Personality Traits. You can have a maximum of four traits. These are permanent and serve as little bonuses to your character's development. The full list is being revised and will be linked to shortly. Generally, you will not "roll" a personality trait. However, some traits modify your rolls and may serve as a bonus. For instance, Jimmy has the "animal Lover" personality trait. When they roll a "magical creatures" check, they add 3 as a bonus. 
+
+Characteristics. Characteristics are a new attribute. There are 9 total and they are rolled differently. The max value is 5 and the minimum is 1. The default roll is:
+
+1d10 * Characteristic Value 
+
+Example: Ella has a charisma score of 3. The headmaster asks them to roll a charisma check. Ella rolls 3*1d10 and gets a 1, 4, and 6. So
+
+1d10 * Characteristic Value 
+
+(1) + (4) + (6) = Omnibus value of 11
+
+Combat and Wounds
+
+Combat is more fully described here
+
+There are 13 types of damage (wound types). While the total is cumulative, each type of damage needs to be healed in ways that are specific to the kind of damage taken. For example, healing 1 medium wound of depressive damage does nothing if all of your injuries were "cut" damage. The wound types are described in this page.
+
+Books and Curricula
+
+Books are the primary way that your character learns new spells, potions, and proficiencies. 
+
+Curricula. Each school has a curriculum with a list of books assigned each year. If your character attends that school and takes those classes, they must have those books on hand and they automatically know everything in those books (including all spells, potions, and proficiencies). 
+
+Book Slots. Each school year has an assigned number of book slots as well. this signifies that maximum number of books that your character can read in a given school year beyond those that were assigned. It's based, primarily, on the workload and the intensity of the courses they are actively taking. More classes? Fewer slots. You can read other books to learn new spells, potions, and proficiencies beyond those in the standard curriculum
+
+Where to find books? Books can be found in libraries, shops, and may be hidden in the world. You can borrow a book to read it. You can steal books to read them. But, you must somehow acquire the book in order for your character to obtain the knowledge within. Just because a book exists, doesn't mean you know what is in it. 
+
+Minimum requirements. Some books may be too esoteric for just any ol' wizard to read. Pay attention to these minimum requirements because your character won't understand  the text enough to learn the knowledge contained in those pages if they do not have the fundamentals down pat. 
+
+Organisms
+
+This section will discuss how creatures, plants, animals, muggles, squibs, and other living things work in the world.
+
+Creatures
+
+Creatures are a major part of the Wizarding World. A player may bond with, control, ride, fight, extract from or train creatures from many areas throughout the world. 
+
+Stats
+
+Creatures come with a number of stats to govern their movement, battle actions, and bonding/taming rules. 
+
+Creature Types. There are three creature types, beasts, beings and spirits. There is a subset of Beasts called animals which are non-magical). As an example, both Toads and Giant Purple Toads are beasts. Toads themselves are animals. Giant Purple Toads are magical, therefore, they are not animals. Beings include wizarding folk, squibs, muggles, goblins, half-elves, etc. Spirits include ghosts, dementors, infieri, etc. 
+
+Ministry Classification. From X to XXXXX, these classifications indicate the dangerousness of the creature. The classification impacts how difficult they are to control when trying to control multiple creatures in battle. 
+
+Heavy Wound Capacity. This is the creature's death stat. Once they suffer this number of heavy wounds, they will die. 
+
+Size. Size is a value between 1 and 5 with 1 being approximately the size of a rat and 5 being the size of a dragon. Humans are size 3. 
+
+Magical Status. Not all creatures are magical. Some are just animals. Magical creatures often have some magical ability that will manifest in the ways the creature behaves.
+
+Magical Resistance. Magical resistance is a set number. Any casts below the magical resistance value automatically fail. For example, if a beast has a magical resistance value of 25, and the caster successfully cast a spell at a value of 22: The creature would resist the spell in full. 
+
+Sentience and Intelligence. Some creatures are sentient (meaning, of higher intelligence; e.g., Centaurs). Intelligence among sentient creatures is more akin to human intelligence. Complex reasoning and planning are common. Language skills are usually also present. Non-sentient creatures with very high intelligence are more intelligent like an elephant or magpie is intelligent. They can solve some problems and maybe even use tools, but reasoning, logic, language, complex comprehension, and other higher-order intellectual skills are not present. 
+
+To roll an intelligence roll, take the intelligence score provided (called G) and roll Gd10. For example, a creature has an intelligence score of 3, they will roll 3d10 because G=3.
+
+If a creature is sentient, interpret their intelligence score in relation to human intelligence. If a creature is non-sentient, interpret their intelligence score in relation to other non-sentient creatures
+
+Example High Intelligence Roll (Sentient). A goblin is working with humans when all come across a complicated puzzle. The high roll allows the goblin to gain insight into the best way to solve the puzzle.
+
+Example Low Intelligence Roll (Sentient). A house elf is fighting the humans and needs to sort out a clever way of evading their attacks. While the house elf is technically able to evade the attack, their low roll means that they didn't figure it out this time. 
+
+Example High Intelligence Roll (Non-sentient). An owl is trying to figure out what a human is trying to teach them. With their high roll, they are able to correctly interpret the instructions and will do what they were told. 
+
+Example Low Intelligence Roll (Non-sentient). An erumpent is blocked from hitting their target by a magical barrier. Their low roll means they do not figure out that they can go around the barrier. They will persist in trying to run directly at their target. 
+
+Social Skills. Some creatures, along with their sentience and high intellect, will use human social skills in interactions their human interactions. For example, a centaur, sphinx, goblin, house elf, or other creature will interact with humans much like they interact with one another. In these cases, use the social skill value to determine events relating to social interactions. 
+
+For example, a wizard tries to convince a goblin to allow them passage into a secret place. The wizard rolls their social skills check. If their roll is higher than the social skill value for the goblin, the goblin is convinced and will allow them in. 
+
+Social Rules. Social rules govern what kind of relationship you can have with a creature. There are three types: luring, taming, and bonding. Just because you've trapped a creature does not mean that you've tamed it or bonded with it. Taming, Luring, Trapping, and Bonding as well as many other facets of interactions with creatures require specific proficiencies you'll learn through reading books (Sometimes, they can be taught by others). If you do not have the proficiency, you cannot perform the action (your character just doesn't know what to do).
+
+Luring allows a human to convince a creature to follow or come to the human. 
+
+Taming allows the human to interact with the creature safely, but does not allow them control or train the creature. 
+
+Bonding allows a human to bond with and train an animal. Bonding requires both the proficiency in bonding with that creature and a successful roll. The exact procedures for bonding are outlined here. Once you bond with a creature, you can also command it in battle. See the Bonding page for more details.
+
+These social interactions may come with additional requirements, stipulations, or restrictions (so read the additional rules carefully).
+
+Once a creature has bonded with the human, they can begin training that creature. The tasks learned by the creature should be consistent with their physical and magical abilities as well as an understanding of the temperament and culture of the organism. The headmaster determines (in tandem with the player) what skills and abilities can be trained. Typically, you should train (at most) one creature to perform one new task per play session. 
+
+Movement. The three movement categories are ground, water, air. Not all creatures can move equally in all environments. Each movement category has an agility statistic and a speed statistic. Agility affects situations like dodging or changing direction. Speed affects more straight-line movement. 
+
+Ground Movement involves any movement on land. It's possible that a specific terrain might, reasonably, be more navigable for some creatures than others. Headmasters can give a bonus/penalty accordingly. Otherwise, any flat hard surface is considered "ground" and these stats apply. If a character cannot move on land, they will simply lie there like a dying fish. 
+
+Water Movement. "Water" is defined broadly as any non-damaging fluid substance. It's possible that the creature is moving through another liquidy substance like a river of blood (or something similar). Water movement stats still apply. If the creature cannot move in water, they'll either float or drown accordingly.
+
+Air Movement. Air movement involves any situation in which the creature is lifted off the ground. Many creatures cannot fly/sail, so they will simply fall to the ground (taking significant damage in the process). 
+
+Attacks. Most creatures have a set of attacks they can perform in battle. The headmaster determines which they use and why. Unless specifically provoked, by a specific enemy, most dumber creatures will attack the nearest opponent. 
+
+Set values. Attacks have a set value at which they are performed. Essentially, if the attack's set value is 12, it's as if the creature rolled 12 each time. The opponent must roll 12 or higher to dodge or block the attack. 
+
+Damage. There are 13 wound types. Each attack has a kind of damage associated with it. Healing the damage requires healing the right type of damage. 
+
+Damage over time. Some attacks continue to cause damage after the initial incident. In these cases, the attack will include a wound type, latency (time) indication, and duration. Basically: what kind of damage are you taking (wound type), how often (latency), and for how long (duration). If the underlying cause of the damage over time is healed, the damage does not continue to accrue. 
+
+Abilities. Some creatures also have non-combat abilities and these, too, come with a set value to determine their success or failure. 
+
+Creature Parts. Almost all creatures have some usable parts that can be extracted from them. To extract a creature part, you must have the proficiency associated with that creature part. 
+
+Spellbooks. Some creatures have magical powers and can spellcast. These spell options will be listed in their specific spellbook. 
+
+Bonding and Commanding Creatures
+
+...more to come.
+
+vvv ARCHIVE (OLD DEFUNCT INFO) vvv
+
+Everything below is the archived version of this page. 
+
+A Brief Intro to RPGing for New RPGers
+
+I've found that many interested in this game tend not to be interested in other tabletop RPGs. That's fine! This one is a little different anyway. Here's a brief introduction: 
+
+You may feel somewhat overwhelmed at trying an RPG for the first time. Consider these as a basic guide: when you play a typical board game, there are rules. You have to follow those rules. If you come up with something clever or different or weird, you’re not following the rules. Tabletop RPGs flip that script. Instead, you generate the ideas. They come from your mind and creativity. Yes, there are some rules, but the headmaster can help you convert what you’re thinking into the mechanics of the game.
+
+It’s important to work with your party members. If you’re too far off doing your own thing, the other players might not enjoy your contributions as much. Remember it is a team game. Support one another and give everyone time and space. Share the spotlight.
+
+Be responsive to and rely on the headmaster. Their primary job is to help you build an experience for everyone at the table. When in doubt, ask a party member or the headmaster for help.
+
+Tabletop RPGs are designed to tell an emerging story. There are stems, themes, characters, and some plots. What happens in the game is entirely up to the players, the dice, and the reactions of the NPCs (as managed by the headmaster). Maybe you’re very good at potions, but on this one attempt, you don’t roll well and your efforts ultimately fail. Your skills matter. So too do the dice.
+
+Game Mechanics
+
+A mechanic is a part a game that governs how a particular piece of the overall game works. We've developed many mechanics and this section will link you to these as they are added and modified. 
+
+The game primarily uses a ten-sided die (d10) for almost all “checks.” 
+
+Because the game is meant to be played in roll20, the dice additions are somewhat complicated. For the most part, the character sheet will manage the rolls for you or will give you prompts for what to add. Some personality traits are too complex for the roll20 system to properly calculate. At present, there is no way to add equipment bonuses.
+
+The dice roll itself is referred to as the initial roll (or will be referred to by saying "on-the-die"). The final roll after all additions and subtractions are added is referred to as the "Terminal Value". Creatures often have rolls that have an automatic terminal value (nothing is rolled) and this is referred to as an "associated value" when the damage type is "automatic".
+
+Character Creation
+Attributes
+Skills
+Branches
+Personality Traits
+Checks
+Bonuses
+Schedule
+Academics (Courses, Grades, Exams)
+Curriculum and Matriculation
+Discipline
+Temporary States
+Advancement and Skill Acquisition
+Items
+Enchanting Items (Under Artificing)
+Money
+Spellcrafting (under Ancient Runes)
+Combat
+Books
+Shops and Storerooms
+Maps
+Bonding/Creatures in battle
+Potioncrafting
