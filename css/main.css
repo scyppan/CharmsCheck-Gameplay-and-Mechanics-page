@@ -1,0 +1,24 @@
+
+h6{
+	font-weight: bold;
+	margin-top: 13px;
+	margin-bottom: 7px;
+}
+
+#spacer{
+	height: 23px;
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+}
+
+ul > li:first-child{
+margin-top:7px;
+}
+
+ul > li {
+  margin-bottom: 13px;
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+}
