@@ -1,46 +1,52 @@
 function initSidepanel() {
-  var items = document.querySelectorAll('.cc-sidepanel-item');
+  const sidepanelMap = new Map([
+    ['Intro',    { id: 'cc-section-intro' }],
+    ['Overview', { id: 'cc-section-overview' }],
+    ['Attributes', { id: 'cc-section-attributes' }],
+    ['Rolling',  { id: 'cc-section-rolling' }],
+    ['Abilities', { id: 'cc-section-abilities' }],
+    ['Blood Status', { id: 'cc-section-blood-status' }],
+    ['Characteristic Development', { id: 'cc-section-characteristic-development' }],
+    ['Characteristics', { id: 'cc-section-characteristics' }],
+    ['Parental', { id: 'cc-section-parental' }],
+    ['Traits',   { id: 'cc-section-traits' }],
+    ['Skills',   { id: 'cc-section-skills' }]
+  ])
+
+  const items = document.querySelectorAll('.cc-sidepanel-item')
   if (!items.length) {
-    console.warn('No sidepanel items found');
-    return;
+    console.warn('No sidepanel items found')
+    return
   }
 
-  // attach click handlers
-  for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener('click', function() {
-      // build a slug from the exact button text
-      var key = this
-        .textContent
-        .trim()
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w-]/g, '');  // strip any punctuation
-
-      showSection(key);
-
-      // update “active” state
-      for (var j = 0; j < items.length; j++) {
-        items[j].classList.remove('active');
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      const label = item.textContent.trim()
+      const entry = sidepanelMap.get(label)
+      if (!entry) {
+        console.warn('Unmapped label:', label)
+        return
       }
-      this.classList.add('active');
-    });
-  }
 
-  // kick‐off on the first panel
-  items[0].click();
+      showSection(entry.id)
+      items.forEach(i => i.classList.remove('active'))
+      item.classList.add('active')
+    })
+  })
+
+  items[0].click()
 }
 
-function showSection(key) {
-  // match any element whose class list contains “cc-section-…”
-  var sections = document.querySelectorAll('[class*="cc-section-"]');
-  for (var i = 0; i < sections.length; i++) {
-    var sec = sections[i];
-    if (sec.classList.contains('cc-section-' + key)) {
-      sec.classList.remove('hidden');
-    } else {
-      sec.classList.add('hidden');
-    }
-  }
+function showSection(targetId) {
+  const sections = document.querySelectorAll('[id^="cc-section-"]')
+  sections.forEach(function(sec) {
+    sec.classList.toggle('hidden', sec.id !== targetId)
+  })
 }
 
-document.addEventListener('DOMContentLoaded', initSidepanel);
+// this function receives baseUrl and version as arguments
+function initMain(baseUrl, version) {
+  loadAssets(baseUrl, version)
+  loadSnippets(baseUrl, version)
+  initSidepanel()
+}

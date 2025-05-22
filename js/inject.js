@@ -1,45 +1,30 @@
-function loadHtmlSnippets(targetSelector, fileUrls, wrapperTagName) {
-  var target = document.querySelector(targetSelector);
-  var wrapperTag = wrapperTagName || 'section';
-
-  function insertNext(index) {
-    if (index >= fileUrls.length) return;
-
-    fetch(fileUrls[index])
-      .then(function(response) {
-        return response.text();
-      })
-      .then(function(html) {
-        var wrapper = document.createElement(wrapperTag);
-        wrapper.innerHTML = html;
-        target.appendChild(wrapper);
-        insertNext(index + 1);
-      })
-      .catch(function(error) {
-        console.error('Error loading', fileUrls[index], error);
-        insertNext(index + 1);
-      });
+function loadSnippets(baseUrl, version) {
+  const target = document.querySelector('main')
+  if (!target) {
+    console.error('<main> element not found')
+    return
   }
 
-  insertNext(0);
+  const fileUrls = htmlfiles.map(function(file) {
+    return baseUrl + '@' + version + '/html/' + file + '.html'
+  })
+
+  function insertNext(i) {
+    if (i >= fileUrls.length) return
+
+    fetch(fileUrls[i])
+      .then(function(r) { return r.text() })
+      .then(function(html) {
+        const section = document.createElement('section')
+        section.innerHTML = html
+        target.appendChild(section)
+        insertNext(i + 1)
+      })
+      .catch(function(err) {
+        console.error('Loading failed:', fileUrls[i], err)
+        insertNext(i + 1)
+      })
+  }
+
+  insertNext(0)
 }
-
-function loadRepoSnippets(options) {
-  var repo    = options.repo;
-  var version = options.version;
-  var folder  = options.folder || 'html';
-  var target  = options.targetSelector;
-  var files   = options.files;
-  var wrapper = options.wrapperTagName;
-
-  var baseUrl = 'https://cdn.jsdelivr.net/gh/'
-              + repo + '@' + version + '/' + folder;
-  var urls = files.map(function(name) {
-
-    let finurl=baseUrl + '/' + name + '.html';
-    return finurl;
-  });
-
-  loadHtmlSnippets(target, urls, wrapper);
-}
-

@@ -1,39 +1,13 @@
-const version ='a25.5.22.003'
+const version = 'a25.5.22.003'
+const baseUrl = 'https://cdn.jsdelivr.net/gh/scyppan/CharmsCheck-Gameplay-and-Mechanics-page';
 
-function loadAssets(baseUrl, version, assets) {
-  var head = document.head;
-  var fullPath = baseUrl + '@' + version + '/';
+document.addEventListener('DOMContentLoaded', function () {
 
-  assets.css.forEach(function(file) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = fullPath + 'css/' + file;
-    head.appendChild(link);
-  });
-
-  assets.js.forEach(function(file) {
-    var script = document.createElement('script');
-    script.src = fullPath + 'js/' + file;
-    script.defer = true;
-    head.appendChild(script);
-  });
-}
-
-loadAssets(
-  'https://cdn.jsdelivr.net/gh/scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  version,
-  {
-    css: ['main.css', 'sidepanel.css'],
-    js: ['sidepanel.js', 'inject.js']
+  var mainScript = document.createElement('script')
+  mainScript.src   = baseUrl + '@' + version + '/main.js'
+  mainScript.defer = true
+  mainScript.onload = function() {
+    initMain(baseUrl, version)
   }
-);
-
-
-loadRepoSnippets({
-  targetSelector: 'main',
-  repo:    'scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  version: version,
-  files:   ['intro', 'overview', 'attributes', 'rolling', 'abilities',
-    'bloodstatus', 'characteristicdevelopment', 'characteristics',
-    'parental', 'traits', 'skills']
-});
+  document.head.appendChild(mainScript)
+})
