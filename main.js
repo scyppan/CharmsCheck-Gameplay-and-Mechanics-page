@@ -7,26 +7,41 @@ const htmlfiles  = [
 ]
 
 function loadAssets(baseUrl, version) {
-  const head     = document.head
-  const fullPath = baseUrl + '@' + version + '/'
+  return new Promise((resolve, reject) => {
+    const head = document.head;
+    const fullPath = baseUrl + '@' + version + '/';
+    const total = cssfiles.length + jsfiles.length;
+    let loaded = 0;
 
-  cssfiles.forEach(function(file) {
-    const link      = document.createElement('link')
-    link.rel        = 'stylesheet'
-    link.href       = fullPath + 'css/' + file
-    head.appendChild(link)
-  })
+    function checkDone() {
+      if (++loaded === total) resolve();
+    }
 
-  jsfiles.forEach(function(file) {
-    const script    = document.createElement('script')
-    script.src      = fullPath + 'js/' + file
-    script.defer    = true
-    head.appendChild(script)
-  })
+    if (total === 0) return resolve();
+
+    cssfiles.forEach(function(file) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = fullPath + 'css/' + file;
+      link.onload = checkDone;
+      link.onerror = reject;
+      head.appendChild(link);
+    });
+
+    jsfiles.forEach(function(file) {
+      const script = document.createElement('script');
+      script.src = fullPath + 'js/' + file;
+      script.defer = true;
+      script.onload = checkDone;
+      script.onerror = reject;
+      head.appendChild(script);
+    });
+  });
 }
 
-function initMain(baseUrl, version) {
-  loadAssets(baseUrl, version)
-  loadSnippets(baseUrl, version)
-  initSidepanel()
+// initMain now awaits both
+async function initMain(baseUrl, version) {
+  await loadAssets(baseUrl, version);
+  await loadSnippets(baseUrl, version);
+  initSidepanel();
 }

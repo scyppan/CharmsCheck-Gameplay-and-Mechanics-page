@@ -1,30 +1,28 @@
 function loadSnippets(baseUrl, version) {
-  const target = document.querySelector('main')
-  if (!target) {
-    console.error('<main> element not found')
-    return
-  }
+  return new Promise(resolve => {
+    const target = document.querySelector('main');
+    if (!target) {
+      console.error('<main> element not found');
+      return resolve();
+    }
 
-  const fileUrls = htmlfiles.map(function(file) {
-    return baseUrl + '@' + version + '/html/' + file + '.html'
-  })
+    const fileUrls = htmlfiles.map(file =>
+      baseUrl + '@' + version + '/html/' + file + '.html'
+    );
 
-  function insertNext(i) {
-    if (i >= fileUrls.length) return
+    function insertNext(i) {
+      if (i >= fileUrls.length) return resolve();
+      fetch(fileUrls[i])
+        .then(r => r.text())
+        .then(html => {
+          const section = document.createElement('section');
+          section.innerHTML = html;
+          target.appendChild(section);
+          insertNext(i + 1);
+        })
+        .catch(() => insertNext(i + 1));
+    }
 
-    fetch(fileUrls[i])
-      .then(function(r) { return r.text() })
-      .then(function(html) {
-        const section = document.createElement('section')
-        section.innerHTML = html
-        target.appendChild(section)
-        insertNext(i + 1)
-      })
-      .catch(function(err) {
-        console.error('Loading failed:', fileUrls[i], err)
-        insertNext(i + 1)
-      })
-  }
-
-  insertNext(0)
+    insertNext(0);
+  });
 }
