@@ -35,18 +35,11 @@ function loadRepoSnippets(options) {
   var baseUrl = 'https://cdn.jsdelivr.net/gh/'
               + repo + '@' + version + '/' + folder;
   var urls = files.map(function(name) {
-    return baseUrl + '/' + name + '.html';
+
+    let finurl=baseUrl + '/' + name + '.html';
+    return finurl;
   });
 
   loadHtmlSnippets(target, urls, wrapper);
 }
-
-loadRepoSnippets({
-  targetSelector: 'main',
-  repo:    'scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  version: 'a25.5.25.001',
-  files:   ['intro', 'overview', 'attributes', 'rolling', 'abilities',
-    'bloodstatus', 'characteristicdevelopment', 'characteristics',
-    'parental', 'traits', 'skills']
-});
 

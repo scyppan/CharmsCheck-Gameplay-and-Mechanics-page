@@ -1,3 +1,5 @@
+const version ='a25.5.22.003'
+
 function loadAssets(baseUrl, version, assets) {
   var head = document.head;
   var fullPath = baseUrl + '@' + version + '/';
@@ -17,12 +19,21 @@ function loadAssets(baseUrl, version, assets) {
   });
 }
 
-// Example usage
 loadAssets(
   'https://cdn.jsdelivr.net/gh/scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  'a25.5.20.002',
+  version,
   {
     css: ['main.css', 'sidepanel.css'],
     js: ['sidepanel.js', 'inject.js']
   }
 );
+
+
+loadRepoSnippets({
+  targetSelector: 'main',
+  repo:    'scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
+  version: version,
+  files:   ['intro', 'overview', 'attributes', 'rolling', 'abilities',
+    'bloodstatus', 'characteristicdevelopment', 'characteristics',
+    'parental', 'traits', 'skills']
+});
