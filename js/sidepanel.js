@@ -52,7 +52,7 @@ function initSidepanel() {
     items[0].click();
 }
 
-function showSectionByKey(key) {
+function showSection(key) {
   const entry = Array.from(sidepanelMap.values()).find(e => e.key === key);
   if (!entry) {
     console.warn('No section mapped for key:', key);
