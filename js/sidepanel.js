@@ -34,8 +34,8 @@ function initSidepanel() {
   items[0].classList.add('active');
 }
 
-function showSection(key) {
-  const entry = sidepanelMap.get(key);
+function showSection(key) {console.log(key);
+  const entry = sidepanelMap.get(key);console.log(entry);
   if (!entry) {
     console.warn('No section mapped for key:', key);
     return;
