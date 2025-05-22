@@ -27,29 +27,29 @@ function getSnippetByKey(key) {
 }
 
 function initSidepanel() {
+  const items = document.querySelectorAll('.cc-sidepanel-item');
+  if (!items.length) {
+    console.warn('No sidepanel items found');
+    return;
+  }
 
-    const items = document.querySelectorAll('.cc-sidepanel-item');
-    if (!items.length) {
-        console.warn('No sidepanel items found');
+  items.forEach(function(item) {
+    item.addEventListener('click', function() {
+      const label = item.textContent.trim();
+      const entry = sidepanelMap.get(label);
+      if (!entry) {
+        console.warn('Unmapped label:', label);
         return;
-    }
+      }
 
-    items.forEach(function (item) {
-        item.addEventListener('click', function () {
-            const label = item.textContent.trim();
-            const entry = sidepanelMap.get(label);
-            if (!entry) {
-                console.warn('Unmapped label:', label);
-                return;
-            }
+      showSection(entry.key);
 
-            showSection(entry.id);
-            items.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
-        });
+      items.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
     });
+  });
 
-    items[0].click();
+  items[0].click();
 }
 
 function showSection(key) {
