@@ -44,8 +44,9 @@ function loadRepoSnippets(options) {
 loadRepoSnippets({
   targetSelector: 'main',
   repo:    'scyppan/CharmsCheck-Gameplay-and-Mechanics-page',
-  version: 'a25.5.20.004',
+  version: 'a25.5.25.001',
   files:   ['intro', 'overview', 'attributes', 'rolling', 'abilities',
     'bloodstatus', 'characteristicdevelopment', 'characteristics',
     'parental', 'traits', 'skills']
 });
+
