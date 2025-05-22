@@ -2,19 +2,29 @@ const sidepanelMap = new Map([
     ['Intro', { key: 'Intro', id: 'cc-section-intro', filename: 'intro' }],
     ['Overview', { key: 'Overview', id: 'cc-section-overview', filename: 'overview' }],
     ['Attributes', { key: 'Attributes', id: 'cc-section-attributes', filename: 'attributes' }],
-    ['Rolling', { key: 'Rolling', id: 'cc-section-rolling', filename: 'rolling' }],
+    ['Rolling', { key: 'Rolling and Resolution', id: 'cc-section-rolling', filename: 'rolling' }],
     ['Abilities', { key: 'Abilities', id: 'cc-section-abilities', filename: 'abilities' }],
     ['Blood Status', { key: 'Blood Status', id: 'cc-section-blood-status', filename: 'bloodstatus' }],
     ['Characteristic Development', {
-        key: 'Characteristic Development',
-        id: 'cc-section-characteristic-development',
-        filename: 'characteristicdevelopment'
+        key: 'Character Development',
+        id: 'cc-section-character-development',
+        filename: 'characterdevelopment'
     }],
     ['Characteristics', { key: 'Characteristics', id: 'cc-section-characteristics', filename: 'characteristics' }],
     ['Parental', { key: 'Parental', id: 'cc-section-parental', filename: 'parental' }],
     ['Traits', { key: 'Traits', id: 'cc-section-traits', filename: 'traits' }],
     ['Skills', { key: 'Skills', id: 'cc-section-skills', filename: 'skills' }]
 ]);
+
+function getSnippetByKey(key) {
+  for (const entry of sidepanelMap.values()) {
+    if (entry.key === key) {
+      return document.getElementById(entry.id)
+    }
+  }
+  console.warn('No snippet found for key:', key)
+  return null
+}
 
 function initSidepanel() {
 
@@ -42,11 +52,17 @@ function initSidepanel() {
     items[0].click();
 }
 
-function showSection(targetId) {
-    const sections = document.querySelectorAll('[id^="cc-section-"]')
-    sections.forEach(function (sec) {
-        sec.classList.toggle('hidden', sec.id !== targetId)
-    })
+function showSectionByKey(key) {
+  const entry = Array.from(sidepanelMap.values()).find(e => e.key === key);
+  if (!entry) {
+    console.warn('No section mapped for key:', key);
+    return;
+  }
+
+  const sections = document.querySelectorAll('[id^="cc-section-"]');
+  sections.forEach(sec => {
+    sec.classList.toggle('hidden', sec.id !== entry.id);
+  });
 }
 
 // this function receives baseUrl and version as arguments
