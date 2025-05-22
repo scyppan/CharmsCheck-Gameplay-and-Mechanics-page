@@ -22,36 +22,41 @@ function initSidepanel() {
   items.forEach(item => {
     item.addEventListener('click', () => {
       const key = item.textContent.trim();
+      console.log('initSidepanel clicked key:', key);
       showSection(key);
       items.forEach(i => i.classList.remove('active'));
       item.classList.add('active');
     });
   });
 
-  // activate the first panel
   const firstKey = items[0].textContent.trim();
+  console.log('initSidepanel initial key:', firstKey);
   showSection(firstKey);
   items[0].classList.add('active');
 }
 
-function showSection(key) {console.log(key);
-  const entry = sidepanelMap.get(key);console.log(entry);
+function showSection(key) {
+  console.log('showSection key:', key);
+  const entry = sidepanelMap.get(key);
+  console.log('mapped entry:', entry);
+
   if (!entry) {
     console.warn('No section mapped for key:', key);
     return;
   }
 
-  // hide all snippet wrappers
-  const wrappers = document.querySelectorAll('main > section');
-  wrappers.forEach(w => w.classList.add('hidden'));
+  // hide all sections
+  document.querySelectorAll('[id^="cc-section-"]').forEach(div => {
+    div.classList.add('hidden');
+  });
 
-  // find index via filename
-  const idx = htmlfiles.indexOf(entry.filename);
-  if (idx === -1) {
-    console.warn('Filename not in htmlfiles:', entry.filename);
+  // reveal the target
+  const targetDiv = document.getElementById(entry.id);
+  if (!targetDiv) {
+    console.warn('Element not found for id:', entry.id);
     return;
   }
-
-  // show the matching wrapper
-  wrappers[idx].classList.remove('hidden');
+  console.log('revealing section:', entry.id);
+  targetDiv.classList.remove('hidden');
 }
+
