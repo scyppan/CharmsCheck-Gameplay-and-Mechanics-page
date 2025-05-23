@@ -5,9 +5,9 @@ const sidepanelMap = new Map([
   ['Rolling and Resolution',     { key: 'Rolling and Resolution',     id: 'cc-section-rolling-and-resolution',   filename: 'rolling' }],
   ['Abilities',                  { key: 'Abilities',                  id: 'cc-section-abilities',                 filename: 'abilities' }],
   ['Blood Status',               { key: 'Blood Status',               id: 'cc-section-blood-status',              filename: 'bloodstatus' }],
-  ['Characteristic Development', { key: 'Characteristic Development', id: 'cc-section-characteristic-development',filename: 'characteristicdevelopment' }],
+  ['Character Development',      { key: 'Character Development',      id: 'cc-section-character-development',   filename: 'characterdevelopment' }],
   ['Characteristics',            { key: 'Characteristics',            id: 'cc-section-characteristics',            filename: 'characteristics' }],
-  ['Parental',                   { key: 'Parental',                   id: 'cc-section-parental',                  filename: 'parental' }],
+  ['Parental',                   { key: 'Parental Values',            id: 'cc-section-parental',                  filename: 'parental' }],
   ['Traits',                     { key: 'Traits',                     id: 'cc-section-traits',                     filename: 'traits' }],
   ['Skills',                     { key: 'Skills',                     id: 'cc-section-skills',                     filename: 'skills' }]
 ]);
