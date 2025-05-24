@@ -1,15 +1,15 @@
 const sidepanelMap = new Map([
-  ['Intro',                      { key: 'Intro',                      id: 'cc-section-intro',                     filename: 'intro' }],
-  ['Overview',                   { key: 'Overview',                   id: 'cc-section-overview',                  filename: 'overview' }],
-  ['Attributes',                 { key: 'Attributes',                 id: 'cc-section-attributes',               filename: 'attributes' }],
-  ['Rolling and Resolution',     { key: 'Rolling and Resolution',     id: 'cc-section-rolling-and-resolution',   filename: 'rolling' }],
-  ['Abilities',                  { key: 'Abilities',                  id: 'cc-section-abilities',                 filename: 'abilities' }],
-  ['Blood Status',               { key: 'Blood Status',               id: 'cc-section-blood-status',              filename: 'bloodstatus' }],
-  ['Character Development',      { key: 'Character Development',      id: 'cc-section-character-development',   filename: 'characterdevelopment' }],
-  ['Characteristics',            { key: 'Characteristics',            id: 'cc-section-characteristics',            filename: 'characteristics' }],
-  ['Parental',                   { key: 'Parental Values',            id: 'cc-section-parental',                  filename: 'parental' }],
-  ['Traits',                     { key: 'Traits',                     id: 'cc-section-traits',                     filename: 'traits' }],
-  ['Skills',                     { key: 'Skills',                     id: 'cc-section-skills',                     filename: 'skills' }]
+  ['Intro', { key: 'Intro', id: 'cc-section-intro', filename: 'intro' }],
+  ['Overview', { key: 'Overview', id: 'cc-section-overview', filename: 'overview' }],
+  ['Attributes', { key: 'Attributes', id: 'cc-section-attributes', filename: 'attributes' }],
+  ['Rolling and Resolution', { key: 'Rolling and Resolution', id: 'cc-section-rolling-and-resolution', filename: 'rolling' }],
+  ['Abilities', { key: 'Abilities', id: 'cc-section-abilities', filename: 'abilities' }],
+  ['Blood Status', { key: 'Blood Status', id: 'cc-section-blood-status', filename: 'bloodstatus' }],
+  ['Character Development', { key: 'Character Development', id: 'cc-section-development', filename: 'development' }],
+  ['Characteristics', { key: 'Characteristics', id: 'cc-section-characteristics', filename: 'characteristics' }],
+  ['Parental', { key: 'Parental Values', id: 'cc-section-parental', filename: 'parental' }],
+  ['Traits', { key: 'Traits', id: 'cc-section-traits', filename: 'traits' }],
+  ['Skills', { key: 'Skills', id: 'cc-section-skills', filename: 'skills' }]
 ]);
 
 function initSidepanel() {
@@ -59,4 +59,3 @@ function showSection(key) {
   console.log('revealing section:', entry.id);
   targetDiv.classList.remove('hidden');
 }
-

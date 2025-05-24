@@ -2,7 +2,7 @@ const cssfiles   = ['main.css', 'sidepanel.css']
 const jsfiles    = ['inject.js', 'sidepanel.js']
 const htmlfiles  = [
   'intro','overview','attributes','rolling','abilities',
-  'bloodstatus','characteristicdevelopment','characteristics',
+  'bloodstatus','development','characteristics',
   'parental','traits','skills'
 ]
 
