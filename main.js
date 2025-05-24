@@ -3,7 +3,7 @@ const jsfiles    = ['inject.js', 'sidepanel.js']
 const htmlfiles  = [
   'intro','overview','attributes','rolling','abilities',
   'bloodstatus','development','characteristics',
-  'parental','traits','skills'
+  'parental','traits','skills', 'knowledge'
 ]
 
 function loadAssets(baseUrl, version) {

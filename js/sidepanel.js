@@ -9,7 +9,8 @@ const sidepanelMap = new Map([
   ['Characteristics', { key: 'Characteristics', id: 'cc-section-characteristics', filename: 'characteristics' }],
   ['Parental', { key: 'Parental Values', id: 'cc-section-parental', filename: 'parental' }],
   ['Traits', { key: 'Traits', id: 'cc-section-traits', filename: 'traits' }],
-  ['Skills', { key: 'Skills', id: 'cc-section-skills', filename: 'skills' }]
+  ['Skills', { key: 'Skills', id: 'cc-section-skills', filename: 'skills' }],
+  ['Knowledge', { key: 'Knowledge', id: 'cc-section-knowledge', filename: 'knowledge' }],
 ]);
 
 function initSidepanel() {
